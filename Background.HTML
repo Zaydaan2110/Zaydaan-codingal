@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-family: sans-serif;
+            color: white;
+            background-color: aqua;
+            animation-name: spin;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes spin{
+        0% {
+        }
+        25% {        background-color: yellowgreen;
+        }
+        50% {
+            scale: 2;
+            background-color: blue;
+        }
+        100% {
+            scale: 2;
+            border-radius: 50%;
+            transform: rotate(360deg);
+            background-color: aquamarine;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div>Zaydaan</div>
+</body>
+</html>
