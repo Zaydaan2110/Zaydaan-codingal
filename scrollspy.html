@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+        .scrollspy-example {
+            position: relative;
+            height: 300px;
+            overflow-y: scroll;
+            margin-bottom: 40px;
+            box-shadow: 0px 0px 3px black;
+            padding: 10px;
+        }
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="display-1 text-center m-5">Pet Shop🐶</h1>
+
+    <nav id="navbar-example2" class="navbar bg-body-secondary px-3 mb-3">
+        <a class="navbar-brand" href="#">Home</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">First</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-4 rounded-2" tabindex="0">
+        <h4 id="scrollspyHeading1" class="h1 text-center mb-5">Product Details</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, aut eligendi illum quaerat facilis
+            dignissimos natus voluptates sed at accusantium delectus molestiae velitfugasaep ab maiores culpa quod
+            quo!</p>
+        <img src="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum laudantium at distinctio tenetur cupiditate
+            commodi dolorum quibusdam, consectetur ab voluptates quam laboriosam fuga vero quisquam harum illo adipisci
+            iste culpa.</p>
+
+        <h4 id="scrollspyHeading2">Cats Products</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nam laboriosam delectus deserunt sequi
+            voluptatem beatae odio.</p>
+        <img src="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam maxime molestiae eligendi enim laudantium
+            nisi nihil quo. Asperiores, labore, quae natus ipsum, quisquam qui quia consequuntur nam provident placeat
+            consectetur!</p>
+
+        <h4 id="scrollspyHeading3"></h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, nemo? Deserunt, aut aspernatur? Velit est
+            neque nulla, voluptatibus modi perspiciatis ullam repudiandae sint atque deleniti maxime eos consectetur
+            eligendi molestias?</p>
+
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid qui quis assumenda repellat ad quibusdam in
+            libero numquam similique, asperiores et aliquam distinctio illo iure neque. A eveniet minus est.</p>
+
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit cum cupiditate, ea tempore quaerat
+            obcaecati nostrum veritatis mollitia voluptatibus voluptas deserunt corporis ipsum temporibus! Magni ipsam
+            suscipit dicta itaque?</p>
+    </div>
+
+    <h2 class="display-5 text-center m-5">Popular Dogs</h2>
+    <p class="text-center m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, unde dolore, voluptate
+        laborum fugit quo cumque doloremque iusto error perferendis pariatur ab amet fugiat ut esse eum voluptates odio
+        quam.</p>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner p-3">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHVwcHl8ZW58MHx8MHx8fDA%3D"
+                    class="d-block w-50 h-50 m-auto" alt="Puppy Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://plus.unsplash.com/premium_photo-1707410048990-c9e0fb4e3956?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHVwcHl8ZW58MHx8MHx8fDA%3D"
+                    class="d-block w-50 h-50 m-auto" alt="Puppy Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1529906920574-628dc1e49f5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHB1cHB5fGVufDB8fDB8fHww"
+                    class="d-block w-50 h-50 m-auto" alt="Puppy Image 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
